@@ -19,8 +19,7 @@ namespace MF
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
-            listBox1.Items.Add(string.Format("`•¨Œê‘nì`"));
+            
         }
     }
 }
