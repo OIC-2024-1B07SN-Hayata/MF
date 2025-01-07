@@ -32,10 +32,20 @@ namespace MF
 
             listBox1.Items.Add(string.Format("この物語はごく平凡な男の子の物語。"));
             label8.Text = "男の子の趣味を選択してください。";
-            labelA.Text ="A:音楽";
-            labelB.Text ="B:アニメ";
-            labelC.Text ="C:スポーツ";
-            
+            labelA.Text = "A:音楽";
+            labelB.Text = "B:アニメ";
+            labelC.Text = "C:スポーツ";
+
+        }
+
+        private void buttonA_Click(object sender, EventArgs e)
+        {
+            if (labelA.Text == "A:音楽")
+            {         
+                listBox1.Items.Add(string.Format("彼は幼い頃から音楽が好きでした。"));
+                listBox1.Items.Add(string.Format("音楽はとても楽しく、美しいもので"));
+                listBox1.Items.Add(string.Format("音楽には目に見えない力があることも彼は知っていました。"));
+            }
         }
     }
 }
