@@ -41,10 +41,30 @@ namespace MF
         private void buttonA_Click(object sender, EventArgs e)
         {
             if (labelA.Text == "A:音楽")
-            {         
+            {
                 listBox1.Items.Add(string.Format("彼は幼い頃から音楽が好きでした。"));
                 listBox1.Items.Add(string.Format("音楽はとても楽しく、美しいもので"));
                 listBox1.Items.Add(string.Format("音楽には目に見えない力があることも彼は知っていました。"));
+                listBox1.Items.Add(string.Format(""));
+            }
+        }
+
+        private void buttonB_Click(object sender, EventArgs e)
+        {
+            if (labelB.Text == "B:アニメ")
+            {
+                listBox1.Items.Add(string.Format("彼はアニメが好きでした。"));
+                listBox1.Items.Add(string.Format("画面の向こうには人々から好かれるヒーローがいました。"));
+                listBox1.Items.Add(string.Format(""));
+            }
+        }
+
+        private void buttonC_Click(object sender, EventArgs e)
+        {
+            if (labelC.Text == "C:スポーツ")
+            {
+                listBox1.Items.Add(string.Format("彼はスポーツが好きでした。"));
+                listBox1.Items.Add(string.Format(""));              
             }
         }
     }

@@ -91,6 +91,7 @@
             buttonB.TabIndex = 4;
             buttonB.Text = "B";
             buttonB.UseVisualStyleBackColor = true;
+            buttonB.Click += buttonB_Click;
             // 
             // buttonC
             // 
@@ -100,6 +101,7 @@
             buttonC.TabIndex = 5;
             buttonC.Text = "C";
             buttonC.UseVisualStyleBackColor = true;
+            buttonC.Click += buttonC_Click;
             // 
             // labelA
             // 
