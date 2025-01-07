@@ -31,15 +31,17 @@
             konnitiwaaa = new Label();
             label1 = new Label();
             label2 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
+            buttonA = new Button();
+            buttonB = new Button();
+            buttonC = new Button();
+            labelA = new Label();
+            labelB = new Label();
+            labelC = new Label();
             label6 = new Label();
             label7 = new Label();
             listBox1 = new ListBox();
+            button4 = new Button();
+            label8 = new Label();
             SuspendLayout();
             // 
             // konnitiwaaa
@@ -71,64 +73,64 @@
             label2.TabIndex = 2;
             label2.Text = "選択してください";
             // 
-            // button1
+            // buttonA
             // 
-            button1.Location = new Point(103, 560);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 3;
-            button1.Text = "A";
-            button1.UseVisualStyleBackColor = true;
+            buttonA.Location = new Point(103, 560);
+            buttonA.Name = "buttonA";
+            buttonA.Size = new Size(112, 34);
+            buttonA.TabIndex = 3;
+            buttonA.Text = "A";
+            buttonA.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonB
             // 
-            button2.Location = new Point(244, 560);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 4;
-            button2.Text = "B";
-            button2.UseVisualStyleBackColor = true;
+            buttonB.Location = new Point(244, 560);
+            buttonB.Name = "buttonB";
+            buttonB.Size = new Size(112, 34);
+            buttonB.TabIndex = 4;
+            buttonB.Text = "B";
+            buttonB.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonC
             // 
-            button3.Location = new Point(393, 560);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 5;
-            button3.Text = "C";
-            button3.UseVisualStyleBackColor = true;
+            buttonC.Location = new Point(393, 560);
+            buttonC.Name = "buttonC";
+            buttonC.Size = new Size(112, 34);
+            buttonC.TabIndex = 5;
+            buttonC.Text = "C";
+            buttonC.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // labelA
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(187, 344);
-            label3.Name = "label3";
-            label3.Size = new Size(28, 25);
-            label3.TabIndex = 6;
-            label3.Text = "A:";
+            labelA.AutoSize = true;
+            labelA.Location = new Point(187, 344);
+            labelA.Name = "labelA";
+            labelA.Size = new Size(28, 25);
+            labelA.TabIndex = 6;
+            labelA.Text = "A:";
             // 
-            // label4
+            // labelB
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(187, 390);
-            label4.Name = "label4";
-            label4.Size = new Size(26, 25);
-            label4.TabIndex = 7;
-            label4.Text = "B:";
+            labelB.AutoSize = true;
+            labelB.Location = new Point(187, 390);
+            labelB.Name = "labelB";
+            labelB.Size = new Size(26, 25);
+            labelB.TabIndex = 7;
+            labelB.Text = "B:";
             // 
-            // label5
+            // labelC
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(186, 431);
-            label5.Name = "label5";
-            label5.Size = new Size(27, 25);
-            label5.TabIndex = 8;
-            label5.Text = "C:";
+            labelC.AutoSize = true;
+            labelC.Location = new Point(186, 431);
+            labelC.Name = "labelC";
+            labelC.Size = new Size(27, 25);
+            labelC.TabIndex = 8;
+            labelC.Text = "C:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(123, 201);
+            label6.Location = new Point(103, 158);
             label6.Name = "label6";
             label6.Size = new Size(299, 25);
             label6.TabIndex = 9;
@@ -137,7 +139,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(123, 236);
+            label7.Location = new Point(83, 194);
             label7.Name = "label7";
             label7.Size = new Size(349, 25);
             label7.TabIndex = 10;
@@ -153,20 +155,42 @@
             listBox1.TabIndex = 11;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
+            // button4
+            // 
+            button4.BackColor = SystemColors.ActiveBorder;
+            button4.Location = new Point(499, 83);
+            button4.Name = "button4";
+            button4.Size = new Size(71, 34);
+            button4.TabIndex = 12;
+            button4.Text = "start";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(83, 257);
+            label8.Name = "label8";
+            label8.Size = new Size(30, 25);
+            label8.TabIndex = 13;
+            label8.Text = "　";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1198, 693);
+            Controls.Add(label8);
+            Controls.Add(button4);
             Controls.Add(listBox1);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(labelC);
+            Controls.Add(labelB);
+            Controls.Add(labelA);
+            Controls.Add(buttonC);
+            Controls.Add(buttonB);
+            Controls.Add(buttonA);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(konnitiwaaa);
@@ -181,14 +205,16 @@
         private Label konnitiwaaa;
         private Label label1;
         private Label label2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Label label3;
-        private Label label4;
-        private Label label5;
+        private Button buttonA;
+        private Button buttonB;
+        private Button buttonC;
+        private Label labelA;
+        private Label labelB;
+        private Label labelC;
         private Label label6;
         private Label label7;
         private ListBox listBox1;
+        private Button button4;
+        private Label label8;
     }
 }
