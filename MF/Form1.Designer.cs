@@ -79,7 +79,7 @@
             buttonA.Name = "buttonA";
             buttonA.Size = new Size(112, 34);
             buttonA.TabIndex = 3;
-            buttonA.Text = "A";
+            buttonA.Text = "音楽";
             buttonA.UseVisualStyleBackColor = true;
             buttonA.Click += buttonA_Click;
             // 
@@ -89,7 +89,7 @@
             buttonB.Name = "buttonB";
             buttonB.Size = new Size(112, 34);
             buttonB.TabIndex = 4;
-            buttonB.Text = "B";
+            buttonB.Text = "アニメ";
             buttonB.UseVisualStyleBackColor = true;
             buttonB.Click += buttonB_Click;
             // 
@@ -97,9 +97,10 @@
             // 
             buttonC.Location = new Point(393, 560);
             buttonC.Name = "buttonC";
+            buttonC.RightToLeft = RightToLeft.No;
             buttonC.Size = new Size(112, 34);
             buttonC.TabIndex = 5;
-            buttonC.Text = "C";
+            buttonC.Text = "スポーツ";
             buttonC.UseVisualStyleBackColor = true;
             buttonC.Click += buttonC_Click;
             // 
