@@ -38,6 +38,18 @@ namespace MF
                     {"軽音部", "path13"},
                     {"例1", "path14"},
                     {"例2","path15" }
+                }},
+                 {"path5",new Dictionary<string, string>
+                {
+                    {"燃える曲","path16"},
+                    {"穏やかな曲","path17" },
+                    {"ラブソング","path18" }
+                }},
+                 {"path6",new Dictionary<string, string>
+                {
+                    {"音楽イベント","path19"},
+                    {"友達と演奏","path20" },
+                    {"サークル","path21" }
                 }}
             };
             string a = storyData[currentPath][curr];
@@ -103,6 +115,35 @@ namespace MF
                 labelC.Text = "例2";
                 label6.Text = "どんな形で演奏したいですか？";
                 label7.Text = "あなたの理想とする場面を考えて選んでください";
+            }
+            if (curr == "ピアノ")
+            {
+                listBox1.Items.Add(string.Format("彼は練習をしていくうちに"));                
+                listBox1.Items.Add(string.Format("自分で曲を作りたいと思うようになりました。"));
+                listBox1.Items.Add(string.Format(""));
+                buttonA.Text = "燃える曲";
+                buttonB.Text = "穏やかな曲";
+                buttonC.Text = "ラブソング";
+                labelA.Text = "力がみなぎってくるような燃える曲";
+                labelB.Text = "共感できて慰めてくれるような穏やかな曲";
+                labelC.Text = "青春時代を思い出すようなラブソング";
+                label6.Text = "どんな曲を作りたいですか？";
+                label7.Text = "あなたの理想とする場面を考えて選んでください";
+            }
+            if (curr == "リコーダー")
+            {
+                listBox1.Items.Add(string.Format("彼は押し入れにしまっていたリコーダーを思い出しました。"));
+                listBox1.Items.Add(string.Format("小学生の頃に音楽の授業で学んだことを思い出しながら練習していくうちに、"));
+                listBox1.Items.Add(string.Format("ひとりで演奏することに物足りなさを感じました。"));
+                listBox1.Items.Add(string.Format(""));
+                buttonA.Text = "音楽イベント";
+                buttonB.Text = "友達と演奏";
+                buttonC.Text = "サークル";
+                labelA.Text = "合奏を楽しむ音楽イベントに参加する";
+                labelB.Text = "仲のいい友達と演奏する";
+                labelC.Text = "サークルに所属する";
+                label6.Text = "どんな風に演奏したいですか？";
+                label7.Text = "あなたの理想とする環境を考えて選んでください";
             }
             //ここにいろいろifかいてね
 
