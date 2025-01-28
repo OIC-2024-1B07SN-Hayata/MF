@@ -23,15 +23,15 @@ namespace MF
                 }},
                 {"path2", new Dictionary<string, string>
                 {
-                    {"アニメ１", "path7"},
-                    {"アニメ２", "path8"},
-                    {"アニメ３", "path9"}
+                    {"戦隊ヒーロー", "path7"},
+                    {"スーパーヒーロー", "path8"},
+                    {"ダークヒーロー", "path9"}
                 }},
                 {"path3",new Dictionary<string, string>
                 {
-                    {"スポーツ１","path10"},
-                    {"スポーツ２","path11" },
-                    {"スポーツ３","path12" }
+                    {"野球","path10"},
+                    {"水泳","path11" },
+                    {"テニス","path12" }
                 }},
                  {"path4", new Dictionary<string, string>
                 {
@@ -66,11 +66,27 @@ namespace MF
                 listBox1.Items.Add(string.Format("彼はアニメが好きでした。"));
                 listBox1.Items.Add(string.Format("画面の向こうには人々から好かれるヒーローがいました。"));
                 listBox1.Items.Add(string.Format(""));
+                buttonA.Text = "戦隊ヒーロー";
+                buttonB.Text = "スーパーヒーロー";
+                buttonC.Text = "ダークヒーロー";
+                labelA.Text = "戦隊ヒーロー";
+                labelB.Text = "スーパーヒーロー";
+                labelC.Text = "ダークヒーロー";
+                label6.Text = "あなたはそのヒーローに憧れました。";
+                label7.Text = "憧れたヒーローを選んでください。";
             }
             if (curr == "スポーツ")
             {
                 listBox1.Items.Add(string.Format("彼はスポーツが好きでした。"));
                 listBox1.Items.Add(string.Format(""));
+                buttonA.Text = "野球";
+                buttonB.Text = "水泳";
+                buttonC.Text = "テニス";
+                labelA.Text = "野球";
+                labelB.Text = "水泳";
+                labelC.Text = "テニス";
+                label6.Text = "見るのが好きだったあなたは挑戦することにしました。";
+                label7.Text = "好きなスポーツを選んでください。";
             }
 
             if (curr == "ギター")
