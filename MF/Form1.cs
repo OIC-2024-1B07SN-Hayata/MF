@@ -36,7 +36,7 @@ namespace MF
                  {"path4", new Dictionary<string, string>
                 {
                     {"軽音部", "path13"},
-                    {"例1", "path14"},
+                    {"SNS", "path14"},
                     {"例2","path15" }
                 }},
                  {"path5",new Dictionary<string, string>
@@ -108,10 +108,10 @@ namespace MF
                 listBox1.Items.Add(string.Format("色んな人に自分の演奏を聴いてほしいと思うようになりました"));
                 listBox1.Items.Add(string.Format(""));
                 buttonA.Text = "軽音部";
-                buttonB.Text = "例1";
+                buttonB.Text = "SNS";
                 buttonC.Text = "例2";
                 labelA.Text = "軽音部に入部してLIVEにでる";
-                labelB.Text = "例1";
+                labelB.Text = "SNSに投稿する";
                 labelC.Text = "例2";
                 label6.Text = "どんな形で演奏したいですか？";
                 label7.Text = "あなたの理想とする場面を考えて選んでください";
