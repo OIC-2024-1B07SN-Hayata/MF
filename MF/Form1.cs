@@ -37,7 +37,7 @@ namespace MF
                 {
                     {"軽音部", "path13"},
                     {"SNS", "path14"},
-                    {"例2","path15" }
+                    {"配信","path15" }
                 }},
                  {"path5",new Dictionary<string, string>
                 {
@@ -50,6 +50,12 @@ namespace MF
                     {"音楽イベント","path19"},
                     {"友達と演奏","path20" },
                     {"サークル","path21" }
+                }},
+                 {"path13", new Dictionary<string, string>
+                {
+                    {"ライブ活動", "path22"},
+                    {"楽曲制作", "path23"},
+                    {"コンテスト","path24" }
                 }}
             };
             string a = storyData[currentPath][curr];
@@ -144,6 +150,79 @@ namespace MF
                 labelC.Text = "サークルに所属する";
                 label6.Text = "どんな風に演奏したいですか？";
                 label7.Text = "あなたの理想とする環境を考えて選んでください";
+            }
+            if (curr == "軽音部")
+            {
+                listBox1.Items.Add(string.Format("軽音部では、彼と同じように音楽に情熱を持つ仲間たちと出会いました。"));
+                listBox1.Items.Add(string.Format("バンドメンバーたちはすぐに意気投合し、彼のギターの才能に驚嘆しました。"));
+                listBox1.Items.Add(string.Format("彼らは一緒に練習を重ね、いくつかの楽曲を完成させました。"));
+                listBox1.Items.Add(string.Format(""));
+                listBox1.Items.Add(string.Format("そして、"));
+                listBox1.Items.Add(string.Format("ついに彼らのバンドは学校のライブイベントに出演することになりました。"));
+                listBox1.Items.Add(string.Format("彼はステージに立つ前の緊張と興奮を感じながら、ギターを手に取りました。"));
+                listBox1.Items.Add(string.Format("ステージが始まると、彼の演奏は力強く、観客を魅了しました。"));
+                listBox1.Items.Add(string.Format("彼の音楽は多くの人々に届き、聴衆の心を掴んで離しませんでした。"));
+                listBox1.Items.Add(string.Format("ライブが終わると、大きな拍手と共に、"));
+                listBox1.Items.Add(string.Format("多くの人々が彼らのバンドを称賛しました。"));
+                listBox1.Items.Add(string.Format("彼は音楽を通じて自分自身を表現し、"));
+                listBox1.Items.Add(string.Format("多くの人々に喜びを届けることができたことに満足感を覚えました。"));
+                listBox1.Items.Add(string.Format(""));
+                buttonA.Text = "ライブ活動";
+                buttonB.Text = "楽曲制作";
+                buttonC.Text = "コンテスト";
+                labelA.Text = "積極的にライブ活動を行う";
+                labelB.Text = "オリジナル楽曲の制作に集中する";
+                labelC.Text = "音楽コンテストに挑戦する";
+                label6.Text = "どんな風に演奏したいですか？";
+                label7.Text = "あなたの理想とする道を考えて選んでください";
+
+            }
+            if (curr == "ライブ活動")
+            {
+                listBox1.Items.Add(string.Format("バンドメンバーたちは、積極的にライブ活動を行うことを決意しました。。"));
+                listBox1.Items.Add(string.Format("彼らは地元のライブハウスやフェスティバルに出演し、"));
+                listBox1.Items.Add(string.Format("多くの観客に自分たちの音楽を届けました。"));
+                listBox1.Items.Add(string.Format(""));
+                listBox1.Items.Add(string.Format("ライブパフォーマンスの経験を積むことで、"));
+                listBox1.Items.Add(string.Format("彼らの演奏技術やステージングが向上し、地元での知名度も高まりました。"));
+                listBox1.Items.Add(string.Format(""));
+                listBox1.Items.Add(string.Format("最終的に、レコード会社から契約のオファーを受け、"));
+                listBox1.Items.Add(string.Format("プロデビューを果たすことになりました。"));           
+                listBox1.Items.Add(string.Format(""));          
+                listBox1.Items.Add(string.Format("音楽の旅はここから新たな章に突入しました。"));
+                listBox1.Items.Add(string.Format("彼らは今後さらに多くのライブに出演し、"));
+                listBox1.Items.Add(string.Format("自分の音楽を広めるために努力を続けるのでしょう。"));
+            }
+            if (curr == "楽曲制作")
+            {
+                listBox1.Items.Add(string.Format("バンドはライブ活動を控えめにし、"));
+                listBox1.Items.Add(string.Format("オリジナル楽曲の制作に集中することにしました。"));
+                listBox1.Items.Add(string.Format("彼らは自主制作のアルバムをリリースし、"));
+                listBox1.Items.Add(string.Format("インターネットを通じて自分たちの音楽を広めました。"));
+                listBox1.Items.Add(string.Format(""));
+                listBox1.Items.Add(string.Format("オンライン上での評判は様々でしたが徐々に高まり、"));
+                listBox1.Items.Add(string.Format("多くのファンを獲得しました"));
+                listBox1.Items.Add(string.Format("彼らの楽曲が音楽ブログやSNSで取り上げられ、"));
+                listBox1.Items.Add(string.Format("ネット上での人気が急上昇し、"));
+                listBox1.Items.Add(string.Format("海外からの注目も集めるようになりました。"));
+                listBox1.Items.Add(string.Format(""));
+                listBox1.Items.Add(string.Format("音楽の旅はここから新たな章に突入しました。"));
+                listBox1.Items.Add(string.Format("彼らは今後さらに多くのライブに出演し、"));
+                listBox1.Items.Add(string.Format("自分の音楽を広めるために努力を続けるのでしょう。"));
+            }
+            if (curr == "コンテスト")
+            {
+                listBox1.Items.Add(string.Format("バンドメンバーたちは音楽コンテストに参加することを決意しました。"));
+                listBox1.Items.Add(string.Format("彼らは地元や全国規模のコンテストに挑戦し、数々の賞を受賞しました。"));
+                listBox1.Items.Add(string.Format("ンテストを通じて多くの音楽関係者に注目されるようになり、、"));
+                listBox1.Items.Add(string.Format("彼らの才能が認められました。"));
+                listBox1.Items.Add(string.Format(""));
+                listBox1.Items.Add(string.Format("最終的には有名な音楽プロデューサーと出会い、"));
+                listBox1.Items.Add(string.Format("プロデュースを受けることになりました。"));    
+                listBox1.Items.Add(string.Format(""));
+                listBox1.Items.Add(string.Format("音楽の旅はここから新たな章に突入しました。"));
+                listBox1.Items.Add(string.Format("彼らは今後さらに多くのライブに出演し、"));
+                listBox1.Items.Add(string.Format("自分の音楽を広めるために努力を続けるのでしょう。"));
             }
             //ここにいろいろifかいてね
 

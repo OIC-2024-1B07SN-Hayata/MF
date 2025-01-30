@@ -155,7 +155,7 @@
             listBox1.ItemHeight = 25;
             listBox1.Location = new Point(576, 83);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(537, 529);
+            listBox1.Size = new Size(576, 529);
             listBox1.TabIndex = 11;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
