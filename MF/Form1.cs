@@ -109,10 +109,10 @@ namespace MF
                 listBox1.Items.Add(string.Format(""));
                 buttonA.Text = "軽音部";
                 buttonB.Text = "SNS";
-                buttonC.Text = "例2";
+                buttonC.Text = "配信";
                 labelA.Text = "軽音部に入部してLIVEにでる";
-                labelB.Text = "SNSに投稿する";
-                labelC.Text = "例2";
+                labelB.Text = "SNSに演奏動画を投稿する";
+                labelC.Text = "ライブやラジオ配信をする";
                 label6.Text = "どんな形で演奏したいですか？";
                 label7.Text = "あなたの理想とする場面を考えて選んでください";
             }
